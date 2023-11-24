@@ -1,0 +1,7 @@
+Router0(config)# router eigrp 100
+Router0(config-router)# network 192.168.1.0
+Router0(config-router)# network 10.0.0.0
+Router0(config-router)# network 20.0.0.0
+Router0(config-router)# no auto-summary
+Router0(config-router)# end
+Router0# copy running-config startup-config

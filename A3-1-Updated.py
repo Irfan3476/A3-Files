@@ -52,7 +52,7 @@ session.sendline('interface loopback 0')
 result = session.expect(['#', pexpect.TIMEOUT, pexpect.EOF])
 
 # Assigning an ip address to the interface of loopback 0
-session.sendline('ip add 192.168.1.100.1 255.255.255.0')
+session.sendline('ip add 127.0.0.1 255.255.255.0')
 result = session.expect(['#', pexpect.TIMEOUT, pexpect.EOF])
 
 # Exiting the interface of loopack 0

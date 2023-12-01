@@ -51,7 +51,7 @@ result = session.expect([r'.\(config\)#', pexpect.TIMEOUT, pexpect.EOF])
 session.sendline('interface loopback 0')
 result = session.expect(['#', pexpect.TIMEOUT, pexpect.EOF])
 
-session.sendline('ip add 10.0.0.1 255.255.255.255')
+session.sendline('ip add 192.168.50.1 255.255.255.0')
 result = session.expect(['#', pexpect.TIMEOUT, pexpect.EOF])
 
 session.sendline('exit')
